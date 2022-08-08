@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<h1>Hello, bug report!</h1>
+
+<p>Move the window around, then use the select. Dropdown list appears somewhere it shouldn't.</p>
+<p>To fix, let another window be in focus instead, and then use the dropdown list once again.</p>
+
+<label>Select issue showcase.</label>
+<select>
+    <option disabled hidden selected>Select something.</option>
+    @foreach (int i in Enumerable.Range(0, 10))
+    {
+        <option>@i</option>
+    }
+</select>
